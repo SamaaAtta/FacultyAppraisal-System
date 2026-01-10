@@ -462,81 +462,169 @@
                 width: 95%;
                 height: 95%;
             }
+
+
+            
+
+
+            
+            
+            
+
+
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <nav>
-                <div class="logo">
-                    <div class="logo-text">
-                        <h1>Faculty Appraisal System</h1>
-                        <p>University of Bahrain • College of Information Technology</p>
-                    </div>
+   <!-- Header -->
+<!-- Header -->
+<header id="home"
+    style="
+        background: linear-gradient(135deg, #003366, #cc0000);
+        color: white;
+        padding: 14px 0;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    ">
+
+    <div class="container"
+        style="
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        ">
+
+        <nav class="navbar"
+            style="
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            ">
+
+            <!-- Logo Section -->
+            <div class="logo"
+                style="
+                    display: flex;
+                    align-items: center;
+                    gap: 16px;
+                    flex-shrink: 0;
+                ">
+
+                <img src="uob-logo.png"
+                alt="University of Bahrain Logo"
+                class="uob-logo"
+                style="
+                position: absolute;
+                left: 2px;       
+                top: 5px;         
+                width: 125px;       
+                height: auto;
+                z-index: 1001;     /* above header */
+               ">
+
+
+                <div class="logo-text"
+                    style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        line-height: 1.25;
+                        max-width: 520px;
+                    ">
+
+                    <!-- University / College / Department -->
+                    <p class="university"
+                       style="
+                            font-size: 0.85rem;
+                            opacity: 0.9;
+                            margin-bottom: 4px;
+                       ">
+                        University of Bahrain<br>
+                        College of Information Technology<br>
+                        Information Systems Department
+                    </p>
+
+                    <!-- Project Title -->
+                    <h1
+                        style="
+                            font-size: 1.55rem;
+                            font-weight: 600;
+                            margin: 4px 0;
+                        ">
+                        Faculty Appraisal System
+                    </h1>
+
+                    <!-- Tagline -->
+                    <p class="tagline"
+                       style="
+                            font-size: 0.9rem;
+                            opacity: 0.85;
+                       ">
+                        A web-based platform to streamline, digitize, and enhance faculty performance evaluation.
+                    </p>
+
                 </div>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li><a href="#resources">Resources</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+            </div>
+
+            <!-- Navigation Links -->
+            <ul class="nav-links"
+                style="
+                    list-style: none;
+                    display: flex;
+                    gap: 28px;
+                    margin: 0;
+                    padding: 0;
+                ">
+
+                <li style="display: flex; align-items: center;">
+                    <a href="#home"
+                       style="
+                            color: white;
+                            text-decoration: none;
+                            font-weight: 500;
+                       ">
+                        Home
+                    </a>
+                </li>
+
+                <li style="display: flex; align-items: center;">
+                    <a href="#about" style="color:white; text-decoration:none; font-weight:500;">About</a>
+                </li>
+
+                <li style="display: flex; align-items: center;">
+                    <a href="#features" style="color:white; text-decoration:none; font-weight:500;">Features</a>
+                </li>
+
+                <li style="display: flex; align-items: center;">
+                    <a href="#team" style="color:white; text-decoration:none; font-weight:500;">Team</a>
+                </li>
+
+                <li style="display: flex; align-items: center;">
+                    <a href="#resources" style="color:white; text-decoration:none; font-weight:500;">Resources</a>
+                </li>
+
+                <li style="display: flex; align-items: center;">
+                    <a href="#contact" style="color:white; text-decoration:none; font-weight:500;">Contact</a>
+                </li>
+
+            </ul>
+
+        </nav>
+    </div>
+</header>
+
 
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="container">
-            <h2>Revolutionizing Faculty Performance Evaluation</h2>
+            <h2>Faculty Appraisal System</h2>
             <p>A comprehensive web-based platform developed at the University of Bahrain to automate and streamline the faculty appraisal process, replacing manual methods with efficient digital solutions.</p>
             <a href="#resources" class="cta-button">Access Resources</a>
         </div>
     </section>
 
-  <!-- About Section -->
-<section id="about" class="about">
-    <div class="container">
-        <h2 class="section-title">About The Project</h2>
-
-        <!-- Two-column about content -->
-        <div class="about-content">
-            <div class="about-text">
-                <p>The Faculty Appraisal System is a senior project developed by Computer Science students at the University of Bahrain. This web-based platform addresses the inefficiencies in the current manual evaluation process, providing a streamlined, automated solution for faculty performance assessment.</p>
-                <p>Our system enables faculty members, department heads, and deans to complete and review appraisal forms online, with performance results displayed in intuitive dashboards for better decision-making and improved overall performance management.</p>
-            </div>
-
-            <div class="about-text">
-                <h3>Project Details</h3>
-                <p><strong>University:</strong> University of Bahrain</p>
-                <p><strong>College:</strong> College of Information Technology</p>
-                <p><strong>Department:</strong> Computer Science</p>
-                <p><strong>Course:</strong> ITSE 498 - Senior Project</p>
-                <p><strong>Academic Year:</strong> 2025-2026 Semester 1</p>
-                <p><strong>Supervisor:</strong> Dr. Abdulla Ahmed Alasaadi</p>
-            </div>
-        </div>
-
-        <!-- Centered Stats Boxes -->
-        <div class="stats" style="display: flex; justify-content: center; gap: 40px; margin-top: 50px; flex-wrap: wrap;">
-            <div class="stat-item" style="text-align: center; padding: 20px; background: var(--light-gray); border-radius: 10px; min-width: 150px;">
-                <span class="stat-number" style="font-size: 2.5rem; font-weight: bold; color: var(--uob-red); display: block;">3</span>
-                <span>Team Members</span>
-            </div>
-            <div class="stat-item" style="text-align: center; padding: 20px; background: var(--light-gray); border-radius: 10px; min-width: 150px;">
-                <span class="stat-number" style="font-size: 2.5rem; font-weight: bold; color: var(--uob-red); display: block;">6</span>
-                <span>Months Development</span>
-            </div>
-            <div class="stat-item" style="text-align: center; padding: 20px; background: var(--light-gray); border-radius: 10px; min-width: 150px;">
-                <span class="stat-number" style="font-size: 2.5rem; font-weight: bold; color: var(--uob-red); display: block;">100%</span>
-                <span>Web-Based Solution</span>
-            </div>
-        </div>
-    </div>
-</section>
 
         <!-- Abstract Section -->
 <section id="abstract" class="abstract">
@@ -577,9 +665,110 @@
             A Use Case Diagram shows how key actors interact with the system, while a Class Diagram outlines its main structure and relationships. 
             A Deployment Diagram also illustrates how users access the system through a web browser, with Next.js/Node.js handling requests and authentication, and PostgreSQL managing the database. 
             Together, these models clearly describe how the system works.
+            The system was developed using the Agile methodology, with version control managed through GitHub. 
+            Comprehensive testing was performed, including unit, functional, integration, and validation testing, to ensure correctness, reliability, and usability. Together, these models and practices clearly describe how the system works and how it was developed.
         </p>
+        <div style="
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 25px;
+    margin-top: 40px;
+">
+
+    <!-- Deployment Diagram -->
+    <div style="flex: 1; text-align: center;">
+        <img src="deploy.png"
+             alt="Deployment Diagram"
+             style="
+                width: 100%;
+                height: auto;
+                max-height: 260px;
+                object-fit: contain;
+                border-radius: 8px;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+             ">
+        <p style="margin-top: 12px; font-weight: 600;">Deployment Diagram</p>
     </div>
+
+    <!-- Use Case Diagram -->
+    <div style="flex: 1; text-align: center;">
+        <img src="usecase.png"
+             alt="Use Case Diagram"
+             style="
+                width: 100%;
+                height: auto;
+                max-height: 260px;
+                object-fit: contain;
+                border-radius: 8px;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+             ">
+        <p style="margin-top: 12px; font-weight: 600;">Use Case Diagram</p>
+    </div>
+
+    <!-- UML Class Diagram -->
+    <div style="flex: 1; text-align: center;">
+        <img src="uml.jpg"
+             alt="UML Class Diagram"
+             style="
+                width: 100%;
+                height: auto;
+                max-height: 260px;
+                object-fit: contain;
+                border-radius: 8px;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+             ">
+        <p style="margin-top: 12px; font-weight: 600;">UML Class Diagram</p>
+    </div>
+
+</div>
+
 </section>
+
+<title>Faculty Appraisal System - Technologies Used</title>
+    <section id="technologies-used" style="max-width: 800px; margin: auto;">
+        <h2 style="color: #cc0000; text-align: center; margin-bottom: 20px;">Technologies Used</h2>
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+
+            <!-- Programming Languages Card -->
+            <div style="background-color: #fff; padding: 20px; border-radius: 10px; flex: 1 1 200px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); min-width: 220px; max-width: 250px;">
+                <h3 style="color: #003366; margin-bottom: 10px;">Programming Languages</h3>
+                <p style="margin: 0;">JavaScript (for both frontend and backend)</p>
+            </div>
+
+            <!-- Frameworks / Libraries Card -->
+            <div style="background-color: #fff; padding: 20px; border-radius: 10px; flex: 1 1 200px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); min-width: 220px; max-width: 250px;">
+                <h3 style="color: #003366; margin-bottom: 10px;">Frameworks / Libraries</h3>
+                <ul style="margin: 0; padding-left: 20px;">
+                    <li><strong>React.js</strong> – Frontend UI development</li>
+                    <li><strong>Next.js</strong> – Server-side rendering and routing</li>
+                    <li><strong>Node.js</strong> – Backend server and API development</li>
+                </ul>
+            </div>
+
+            <!-- Database / ORM Card -->
+            <div style="background-color: #fff; padding: 20px; border-radius: 10px; flex: 1 1 200px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); min-width: 220px; max-width: 250px;">
+                <h3 style="color: #003366; margin-bottom: 10px;">Database / ORM</h3>
+                <ul style="margin: 0; padding-left: 20px;">
+                    <li><strong>PostgreSQL</strong> – Relational database management</li>
+                    <li><strong>Prisma</strong> – ORM for querying PostgreSQL</li>
+                </ul>
+            </div>
+
+            <!-- Version Control / Collaboration Card -->
+            <div style="background-color: #fff; padding: 20px; border-radius: 10px; flex: 1 1 200px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); min-width: 220px; max-width: 250px;">
+                <h3 style="color: #003366; margin-bottom: 10px;">Version Control / Collaboration</h3>
+                <p style="margin: 0;"><strong>GitHub</strong> – Source code management</p>
+            </div>
+
+            <!-- Deployment / Hosting Card -->
+            <div style="background-color: #fff; padding: 20px; border-radius: 10px; flex: 1 1 200px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); min-width: 220px; max-width: 250px;">
+                <h3 style="color: #003366; margin-bottom: 10px;">Deployment / Hosting</h3>
+                <p style="margin: 0;">Web browser-based access (Vercel)</p>
+            </div>
+
+        </div>
+    </section>
 
 <!-- Results Section -->
 <section id="results" class="results">
@@ -590,8 +779,131 @@
             The prototype transforms the traditional Word-based forms into an online workflow with automated data handling, clear evaluation steps, and interactive dashboards.
             This proves the system’s ability to streamline performance reviews, reduce mistakes, and support better decision-making across the university.
         </p>
+        <hr style="border: none;  margin: 30px 0;">
+        
+          <!-- User Interface Screenshots -->
+        <h3 style="color: #003366; margin-bottom: 15px;">Main System User Interfaces</h3>
+        <div style="display: flex; flex-wrap: wrap;margin-bottom: 30px; gap: 20px; justify-content: center; margin-bottom: 30px;">
+            <img src="Interfaces/welcome.png" alt="Welcome Dashboard" style="width: 300px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <img src="Interfaces/faculty dash.png" alt="Faculty Dashboard" style="width: 300px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <img src="Interfaces/hod dash.png" alt="HOD Dashboard" style="width: 300px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <img src="Interfaces/dean dash.jpg" alt="Dean Dashboard" style="width: 300px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <img src="Interfaces/Acheivment.png" alt="achievements" style="width: 300px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <img src="Interfaces/myach.jpg" alt="My Achievements" style="width: 300px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <img src="Interfaces/facultyach.jpg" alt="Faculty Achievements" style="width: 300px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <img src="Interfaces/appraisal list page.png" alt="Appraisal list" style="width: 300px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <img src="Interfaces/save evaluation.png" alt="Evaluation" style="width: 300px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <img src="Interfaces/Appraisal result.png" alt="Appraisal Results" style="width: 300px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <img src="Interfaces/report hod.png" alt="Report hod" style="width: 300px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+
+        </div>
+
+        <!-- Performance Graphs -->
+        <h3 style="color: #003366; margin-bottom: 15px;">Performance Graphs</h3>
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin-bottom: 30px;">
+            <img src="Interfaces/faultyperfor.jpg" alt="Faculty Performance" style="width: 300px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <img src="Interfaces/departperf.jpg" alt="Department Performance" style="width: 300px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <img src="Interfaces/collegeperf.jpg" alt="College Performance" style="width: 300px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+
+        </div>
+
+        <!-- Testing Outcomes -->
+        <h3 style="color: #003366; margin-bottom: 15px;">Testing Outcomes</h3>
+        <table style="width: 100%; border-collapse: collapse; margin-bottom: 30px;">
+            <thead>
+                <tr style="background-color: #003366; color: #fff; text-align: left;">
+                    <th style="padding: 10px; border: 1px solid #ddd;">Test Type</th>
+                    <th style="padding: 10px; border: 1px solid #ddd;">Description</th>
+                    <th style="padding: 10px; border: 1px solid #ddd;">Outcome</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ddd;">Unit Testing</td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">Tests individual functions for correct output.
+                     <strong>Example:</strong> Login with correct/incorrect credentials, add/delete achievements.</td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">Passed</td>
+                </tr>
+                <tr style="background-color: #f2f2f2;">
+                    <td style="padding: 10px; border: 1px solid #ddd;">Functional Testing</td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">Ensures system features work from input to output.
+                     <strong>Example:</strong> Submit achievement forms, calculate appraisal scores, display results.</td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">Passed</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ddd;">Integration Testing</td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">Checks interaction between modules and the database.
+                      <strong>Example:</strong> Evaluator submits scores → database updates → reports generated.
+                    </td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">Passed</td>
+                </tr>
+                <tr style="background-color: #f2f2f2;">
+                    <td style="padding: 10px; border: 1px solid #ddd;">Validation Testing</td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">Ensures required fields and correct inputs.
+                      <strong>Example:</strong> Empty email or password triggers error messages; change password validation.
+                    </td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">Passed</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p style="text-align: center; color: #555;">
+            The system user interfaces, performance graphs, and testing outcomes above demonstrate the system’s functionality, reliability, and ability to improve the faculty appraisal process at the University of Bahrain.
+        </p>
+    </div>
+    
+</section>
+
+
+<!-- Demo Section -->
+<section id="demo" class="team">
+    <div class="container">
+        <h2 class="section-title">Demo</h2>
+
+        <div class="team-grid">
+
+            <!-- Elevator Pitch Video -->
+            <div class="team-member">
+                <div class="member-photo">🎥</div>
+                <h3>Elevator Pitch Video</h3>
+                <p>Short video (1–3 minutes) presenting the purpose, key features, and benefits of the Faculty Appraisal System.</p>
+                <video controls style="width: 100%; border-radius: 8px; margin-top: 15px;">
+                    <source src="Interfaces/pitch.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <!-- System Walkthrough -->
+            <div class="team-member">
+                <div class="member-photo">🧭</div>
+                <h3>System Walkthrough</h3>
+                <p>
+                  Visual walkthrough demonstrating core workflows such as user login,
+                  faculty evaluation, and performance dashboards.
+                </p>
+                    <video controls style="width: 100%; border-radius: 8px; margin-top: 15px;">
+                    <source src="Interfaces/senior.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <!-- Live Demo -->
+            <div class="team-member">
+                <div class="member-photo">🚀</div>
+                <h3>Live Demo</h3>
+                <p>Access the deployed Faculty Appraisal System and explore all features using demo credentials.</p>
+                <a href="https://uob-faculty-appraisal-system-1.vercel.app/"
+                   target="_blank"
+                   class="resource-button"
+                   style="margin-top: 15px; display: inline-block;">
+                    View Live System
+                </a>
+            </div>
+
+        </div>
     </div>
 </section>
+
 
 <!-- Conclusion Section -->
 <section id="conclusion" class="conclusion">
@@ -662,42 +974,102 @@
             </div>
         </div>
     </section>
+<!-- About Section -->
+<section id="about" class="about">
+    <div class="container">
+        <h2 class="section-title">About The Project</h2>
 
-    <!-- Team Section -->
-    <section id="team" class="team">
-        <div class="container">
-            <h2 class="section-title">Development Team</h2>
-            <div class="team-grid">
-                <div class="team-member">
-                    <div class="member-photo">👩‍💻</div>
-                    <h3>Malak Jamal Almari</h3>
-                    <p>202103282</p>
-                    <p>Backend Developer & Database Architect</p>
-                </div>
-                
-                <div class="team-member">
-                    <div class="member-photo">👩‍💻</div>
-                    <h3>Hala Khalid Altahmazi</h3>
-                    <p>202106069</p>
-                    <p>Project Manager & Testing Specialist</p>
-                </div>
-                
-                <div class="team-member">
-                    <div class="member-photo">👩‍💻</div>
-                    <h3>Samaa Atta Elsayed</h3>
-                    <p>202105461</p>
-                    <p>Frontend Developer & UI/UX Designer</p>
-                </div>
+        <!-- Two-column about content -->
+        <div class="about-content">
+            <div class="about-text">
+                <p>
+                    This project is a <strong>Final Year Senior Project</strong> completed during
+                    <strong>Semester 1 of the Academic Year 2025/2026</strong> at the
+                    <strong>College of Information Technology — University of Bahrain</strong>.
+                </p>
+                <p>
+                    The Faculty Appraisal System is a web-based platform developed to improve the
+                    traditional manual faculty evaluation process by providing an automated,
+                    centralized, and transparent solution for academic performance assessment.
+                </p>
             </div>
-            
-            <div class="team-member" style="max-width: 400px; margin: 50px auto 0;">
-                <div class="member-photo">👨‍🏫</div>
-                <h3>Project Supervisor</h3>
-                <h3>Dr. Abdulla Ahmed Alasaadi</h3>
-                <p>Faculty Member, Computer Science Department</p>
+
+            <div class="about-text">
+                <h3>Project Details</h3>
+                <p><strong>University:</strong> University of Bahrain</p>
+                <p><strong>College:</strong> College of Information Technology</p>
+                <p><strong>Department:</strong> Computer Science</p>
+                <p><strong>Course:</strong> ITSE 498 – Senior Project</p>
+                <p><strong>Academic Year:</strong> 2025/2026 – Semester 1</p>
+                <p><strong>Project Type:</strong> Final Year Senior Project</p>
+                <p><strong>Supervisor:</strong> Dr. Abdulla Ahmed Alasaadi</p>
             </div>
         </div>
-    </section>
+
+        <!-- Stats -->
+        <div class="stats" style="display: flex; justify-content: center; gap: 40px; margin-top: 50px; flex-wrap: wrap;">
+            <div class="stat-item" style="text-align: center; padding: 20px; background: var(--light-gray); border-radius: 10px; min-width: 150px;">
+                <span class="stat-number" style="font-size: 2.5rem; font-weight: bold; color: var(--uob-red); display: block;">3</span>
+                <span>Team Members</span>
+            </div>
+            <div class="stat-item" style="text-align: center; padding: 20px; background: var(--light-gray); border-radius: 10px; min-width: 150px;">
+                <span class="stat-number" style="font-size: 2.5rem; font-weight: bold; color: var(--uob-red); display: block;">6</span>
+                <span>Months Development</span>
+            </div>
+            <div class="stat-item" style="text-align: center; padding: 20px; background: var(--light-gray); border-radius: 10px; min-width: 150px;">
+                <span class="stat-number" style="font-size: 2.5rem; font-weight: bold; color: var(--uob-red); display: block;">100%</span>
+                <span>Web-Based Solution</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Team Section -->
+<section id="team" class="team">
+    <div class="container">
+        <h2 class="section-title">Development Team</h2>
+
+        <div class="team-grid">
+            <div class="team-member">
+                <div class="member-photo">👩‍💻</div>
+                <h3>Malak Jamal Almari</h3>
+                <p>Major: Software Engineering</p>
+                <p>Email: 202103282@student.uob.edu.bh</p>
+                <p>LinkedIn: —</p>
+                <p>GitHub: —</p>
+            </div>
+
+            <div class="team-member">
+                <div class="member-photo">👩‍💻</div>
+                <h3>Hala Khalid Altahmazi</h3>
+                <p>Major: Software Engineering</p>
+                <p>Email: 202106069@student.uob.edu.bh</p>
+                <p>LinkedIn: —</p>
+                <p>GitHub: —</p>
+            </div>
+
+            <div class="team-member">
+                <div class="member-photo">👩‍💻</div>
+                <h3>Samaa Atta Elsayed</h3>
+                <p>Major: Software Engineering</p>
+                <p>Email: 202105461@student.uob.edu.bh</p>
+                <p>LinkedIn: linkedin.com/in/samaa-atta</p>
+                <p>GitHub: github.com/SamaaAtta</p>
+            </div>
+        </div>
+
+        <!-- Supervisor -->
+        <div class="team-member" style="max-width: 400px; margin: 50px auto 0;">
+            <div class="member-photo">👨‍🏫</div>
+            <h3>Project Supervisor</h3>
+            <h3>Dr. Abdulla Ahmed Alasaadi</h3>
+            <p>Rank: Head of Department</p>
+            <p>Email: aalasaadi@uob.edu.bh</p>
+        </div>
+    </div>
+</section>
+
+    
 
 
 
@@ -780,7 +1152,7 @@
                     <div style="background: white; padding: 25px; border-radius: 10px; box-shadow: 0 3px 10px rgba(0,0,0,0.1);">
                         <h4 style="color: var(--uob-blue); margin-bottom: 15px;">Supervisor</h4>
                         <p><strong>Dr. Abdulla Ahmed Alasaadi</strong><br>
-                           Faculty Member, Computer Science Department<br>
+                           Head of Department, Computer Science Department<br>
                            aalasaadi@uob.edu.bh</p>
                     </div>
                     
